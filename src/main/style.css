@@ -1,0 +1,176 @@
+.logo-header{
+    width: 40%;
+    height: 30px;
+}
+  .chat-icon {
+      position: fixed;
+      bottom: 60px;
+      right: 50px;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+  
+  .chat-icon img {
+    width: 80px;
+    height: 80px;
+    --glow-color: rgb(11, 194, 226);
+    --glow-spread-color: rgba(10, 238, 181, 0.781);
+    --enhanced-glow-color: rgb(12, 201, 128);
+    --btn-color: rgb(13, 178, 184);
+    color: var(--btn-color);
+ /* background-color: var(--glow-color); */
+ box-shadow: 0 0 1em .10em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .70em .20em var(--glow-color);
+        border-radius: 40%;
+  }
+
+  .designy{
+    text-align: center;
+    font-size: 35px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: rgb(34, 3, 85);
+    font-weight: bold;
+  }
+  .sub-designy{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: rgb(240, 255, 25);
+    font-weight: bold;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  Nav .rgb{
+  
+    animation: colorFlow 5s infinite;
+  text-shadow: 0 0 10px rgba(0, 0, 255, 0.7);  
+  font-weight: bold;
+  }
+  NAV .rgb :hover{
+    background-color: rgb(0, 255, 0);
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  .ai-color{
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    color: var(--btn-color);
+ /* background-color: var(--glow-color); */
+ box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+  }
+  .bot-chatimage{
+    width: 30px;
+    height: 30px;
+
+  }
+  .userimage-chat{
+    width: 30px;
+    height: 30px;
+  }
+  .soca-color{
+    color: rgb(7, 7, 247);
+  }
+
+  /* design */
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #3586ff;
+    overflow: hidden;
+  }
+  section .air{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+    background-size: 1000px 100px
+  }
+  section .air.air1{
+    animation: wave 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+  }
+  section .air.air2{
+    animation: wave2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+  }
+  section .air.air3{
+    animation: wave 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+  }
+  section .air.air4{
+    animation: wave2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+  }
+  @keyframes wave{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: 1000px; 
+    }
+  }
+  @keyframes wave2{
+    0%{
+      background-position-x: 0px; 
+    }
+    100%{
+      background-position-x: -1000px; 
+    }
+  }
+  @keyframes colorFlow {
+    0% { color: rgb(255, 0, 0); }
+    50% { color: rgb(0, 255, 0); }
+    100% { color: rgb(0, 0, 255); }
+  }
